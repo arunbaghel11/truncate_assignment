@@ -161,7 +161,7 @@ npm start
 Backend runs at:
 
 ```
-http://localhost:5000
+https://truncate-assignment.onrender.com/api
 ```
 
 ---
@@ -176,7 +176,7 @@ npm install
 Create `.env`:
 
 ```
-VITE_API_BASE=http://localhost:5000/api
+VITE_API_BASE=(https://truncate-assignment.onrender.com/api)
 ```
 
 Run:
@@ -188,7 +188,7 @@ npm run dev
 Frontend runs at:
 
 ```
-http://localhost:5173
+- https://truncate-assignment-frontend.vercel.app/
 ```
 
 ---
@@ -208,10 +208,7 @@ http://localhost:5173
 Add the following before submitting:
 
 - **GitHub Repository Link**
-- https://truncate-assignment-frontend.vercel.app/
+
 http://github.com/arunbaghel11/truncate_assignment/
-https://truncate-assignment.onrender.com/api
 
-
-Your project is now **fully ready for submission**.
 
