@@ -208,6 +208,10 @@ http://localhost:5173
 Add the following before submitting:
 
 - **GitHub Repository Link**
+- https://truncate-assignment-frontend.vercel.app/
+http://github.com/arunbaghel11/truncate_assignment/
+https://truncate-assignment.onrender.com/api
+
 
 Your project is now **fully ready for submission**.
 
