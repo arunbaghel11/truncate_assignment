@@ -1,0 +1,94 @@
+/* ----------------- GLOBAL ----------------- */
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --muted: #6b6f75;
+  --accent: #0b7b6f;
+  --border: #e6e8ec;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ----------------- SIDEBAR ----------------- */
+.sidebar {
+  width: 260px;
+  background: var(--card);
+  border-right: 1px solid #ececec;
+  padding: 20px 16px;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-box img { width: 40px; height: 40px; border-radius: 8px; }
+.user-name { font-weight: 700; font-size: 15px; }
+.user-role { font-size: 13px; color: var(--muted); }
+
+.section-title { color: #222; font-size: 14px; font-weight: 600; margin-top: 18px; }
+.item { padding: 8px 0; color: #444; font-size: 14px; }
+.item.selected { background: #f1f6f5; padding: 6px; border-radius: 6px; font-weight: 600; }
+
+/* ----------------- MAIN CONTENT ----------------- */
+.main-content { flex: 1; padding: 22px 30px; overflow-y: auto; }
+
+/* ----------------- HEADER ----------------- */
+.top-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.top-header h2 { font-size: 22px; font-weight: 700; margin: 0; }
+.search-input {
+  width: 360px;
+  padding: 10px 14px;
+  border: 1px solid #dcdfe4;
+  border-radius: 10px;
+  background: white;
+}
+
+/* ----------------- FILTER TOOLBAR placeholder - toolbar css in FilterToolbar.css ----------------- */
+
+/* ----------------- METRIC CARDS ----------------- */
+.metric-block { margin-top: 16px; display: flex; gap: 18px; flex-wrap: wrap; }
+.metric-card {
+  background: var(--card);
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  width: 220px;
+}
+.metric-title { margin: 0; color: var(--muted); font-size: 13px; }
+.metric-value { margin-top: 6px; font-size: 18px; font-weight: 700; }
+
+/* ----------------- TABLE ----------------- */
+.table-wrapper { margin-top: 16px; background: var(--card); border-radius: 10px; border: 1px solid var(--border); padding: 0; }
+.styled-table { width: 100%; border-collapse: collapse; }
+.styled-table thead tr { background: #fafafa; }
+.styled-table th { padding: 14px 18px; text-align: left; font-weight: 600; color: #545b63; font-size: 14px; border-bottom: 1px solid #ececec; }
+.styled-table td { padding: 14px 18px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+.qty { text-align: center; }
+
+/* ----------------- PAGINATION ----------------- */
+.pagination { margin: 20px auto; display: flex; justify-content: center; gap: 8px; }
+.pagination button { padding: 6px 12px; background: white; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; }
+.pagination button.active { background: black; color: white; }
+
+/* small screens */
+@media (max-width: 980px) {
+  .sidebar { display: none; }
+  .search-input { width: 220px; }
+}

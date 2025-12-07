@@ -1,0 +1,58 @@
+.filter-toolbar {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 40;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: 8px 14px;
+  background: #fff;
+  border: 1px solid #dce0e4;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-btn:hover { background: #f2f4f7; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  border: 1px solid #dce0e4;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  z-index: 999;
+}
+
+.dropdown-item { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 14px; }
+
+.dropdown-menu input[type="number"],
+.dropdown-menu input[type="date"],
+.dropdown-menu input[type="text"] {
+  width: 140px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.dropdown-menu button {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  background: #fff;
+  cursor: pointer;
+}

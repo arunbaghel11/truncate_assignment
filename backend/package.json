@@ -1,0 +1,19 @@
+{
+  "name": "truestate-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "seed": "node src/utils/seedCsvToMongo.js",
+    "dev": " nodemon src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "fast-csv": "^5.0.5",
+    "mongodb": "^7.0.0",
+    "mongoose": "^7.0.0"
+  }
+}
