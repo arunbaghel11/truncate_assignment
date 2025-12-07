@@ -1,2 +1,3 @@
 /node_modules
-backend/data/sales_sample.csv
+b/ackend/data/sales_sample.csv
+/.env
